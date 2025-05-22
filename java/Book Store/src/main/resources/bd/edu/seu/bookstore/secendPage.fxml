@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.bookstore.secendPageController">
+   <children>
+      <Label layoutX="243.0" layoutY="61.0" text="Book Store" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="131.0" text="Book Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookName" layoutX="117.0" layoutY="149.0" />
+      <Label layoutX="117.0" layoutY="191.0" text="Book Genre:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookGenre" layoutX="117.0" layoutY="217.0" />
+      <Label layoutX="117.0" layoutY="261.0" text="Product status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="productStatus" layoutX="117.0" layoutY="285.0" />
+      <Button layoutX="261.0" layoutY="331.0" mnemonicParsing="false" onAction="#backEvent" text="Back" />
+   </children>
+</AnchorPane>
