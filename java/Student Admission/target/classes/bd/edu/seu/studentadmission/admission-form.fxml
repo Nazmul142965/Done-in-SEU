@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.studentadmission.AdmissionFormController">
+   <children>
+      <Label layoutX="194.0" layoutY="27.0" text="Admission Form">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="43.0" layoutY="72.0" promptText="Name" />
+      <PasswordField fx:id="passwordField" layoutX="42.0" layoutY="111.0" promptText="Password" />
+      <ChoiceBox fx:id="programChoiceBox" layoutX="42.0" layoutY="147.0" prefWidth="150.0" />
+      <RadioButton layoutX="43.0" layoutY="191.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderRadio" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="132.0" layoutY="191.0" mnemonicParsing="false" text="Female" toggleGroup="$genderRadio" />
+      <TextArea fx:id="bioTextArea" layoutX="42.0" layoutY="220.0" prefHeight="59.0" prefWidth="150.0" promptText="Biograpy" />
+      <CheckBox fx:id="agreeCheckedBox" layoutX="43.0" layoutY="299.0" mnemonicParsing="false" text="I agree to admit in SEU" />
+      <Button layoutX="91.0" layoutY="338.0" mnemonicParsing="false" onAction="#submitEvent" text="Submit" />
+      <ListView fx:id="admissionListView" layoutX="303.0" layoutY="60.0" prefHeight="274.0" prefWidth="261.0" />
+      <Separator layoutX="253.0" layoutY="60.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="3.0" />
+      <Slider fx:id="ageSlider" layoutX="272.0" layoutY="357.0" />
+   </children>
+</AnchorPane>
